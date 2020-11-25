@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>web design</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+        <div class="contain">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="1.html">Home</a></li>
+                        <li><a href="cat.html">Catagory</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">LogOut</a></li>
+                        <li><a href="cart.html"><img src="cart.png" width="30px" height="30px"></a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu" onclick="slide()">
+            </div>
+        </div>
+<!-------single product details---->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="gallery-1.jpeg" width="100%" id="productImg">
+            <div class="small-img-row">
+                <!--<div class="small-img-col">
+                    <img src="gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-4.jpg" width="100%" class="small-img">
+                </div>-->
+            </div>
+      
+      
+      
+      
+      
+        </div>
+        <div class="col-2">
+            <p>HOME / T-Shirt</p>
+            <h1>Rd printed shirt</h1>
+            <h4>250</h4>
+            <select>
+                <option>select size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">add to card</a>
+            <h3>Product Detailes</h3>
+            <p>gjfgfdsjgfjsdjsdkjfdskjdsvjfhgkabvfjshgf<br>hvjgf</p>
+        </div>
+    </div>
+</div>
+<!-------------title-->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Product</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+<!------------product-->
+<div class="small-container">
+<div class="row">
+    <div class="col-4">
+        <img src="product-4.jpeg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+    <div class="col-4">
+      <img src="product-3.jpg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="product-6.jpg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="category-1.jpeg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+</div>
+  </div>
+<!------------------foot---------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Follow US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="cpy">&copy;Copyright 2020-Raj_Mathew</p>
+    </div>
+</div>
+
+<script>
+    var menuitem = document.getElementById("menuitem");
+
+    menuitem.style.maxHeight = "0px";
+    function slide(){
+        if(menuitem.style.maxHeight == "0px")
+          {
+              menuitem.style.maxHeight = "200px"
+          }
+        else{
+            menuitem.style.maxHeight = "0px"
+        }
+    }
+</script>
+<!----------product gallery---------->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function()
+    {
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function()
+    {
+        productImg.src = smallImg[3].src;
+    }
+</script>
+</body>
+</html>
