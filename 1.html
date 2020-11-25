@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>web design</title>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="1.css" />
+    </head>
+<body>
+    <div class="header">
+        <div class="container">
+<!----Module------------------------------------------------------------------------->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="cat.html">Catagory</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">LogOut</a></li>
+                        <li><a href="product-detail.html">Cart &nbsp;<img src="cart.png" width="30px" height="30px"></a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu" onclick="slide()">
+            </div>
+      <!-----  <div class="row">
+            <div class="col-2">---->
+            <div class="left">
+                <h1>Walk in for the Fashion,Stay in<br>for the Style</h1>
+                <p>Shop for the Best Clothes</p>
+                <a href="cat.html" class="btn">Shop Now!</a> 
+            </div>
+        </div>
+        </div>
+    </div>
+<!----feautures----->
+<div class="catagories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="category-1.jpeg">
+            </div>
+            <div class="col-3">
+                <img src="category-2.jpeg">
+            </div><div class="col-3">
+                <img src="category-3.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured product-->
+<div class="small-container">
+    <h2 class="title"> Featured product</h2>
+  <div class="row">
+      <div class="col-4">
+          <img src="product-1.jpeg">
+          <h4>Red printed</h4>
+          <p>250.00</p>
+      </div>
+      <div class="col-4">
+        <img src="product-2.jpeg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+    <div class="col-4">
+        <img src="product-3.jpg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+    <div class="col-4">
+        <img src="product-4.jpeg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+        <img src="product-5.jpeg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+    <div class="col-4">
+      <img src="product-6.jpg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="product-7.jpeg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="product-8.jpg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <img src="product-9.jpeg">
+        <h4>Red printed</h4>
+        <p>250.00</p>
+    </div>
+    <div class="col-4">
+      <img src="product-10.jpeg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="product-11.jpg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+  <div class="col-4">
+      <img src="product-12.jpeg">
+      <h4>Red printed</h4>
+      <p>250.00</p>
+  </div>
+</div>
+</div>
+<!--Offer
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusive Available on BG</p>
+                <h1>small band 4</h1>
+                <small>jhfjhfjhgjgjggjhfjhfyjhfuyfuyfuftyfyfyujhnhfjfjhfytrvujyvuytkuvtkyvtuuvk</small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+       </div>
+        </div>
+    </div>
+</div>-->
+<!------------------foot---------------->
+<div class="footer">
+    <div class="semi-container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Follow US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="cpy">&copy;Copyright 2020-Raj_Mathew</p>
+    </div>
+</div>
+
+<script>
+    var menuitem = document.getElementById("menuitem");
+
+    menuitem.style.maxHeight = "0px";
+    function slide(){
+        if(menuitem.style.maxHeight == "0px")
+          {
+              menuitem.style.maxHeight = "200px"
+          }
+        else{
+            menuitem.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>
